@@ -142,7 +142,8 @@ async def not_joined(client: Client, message: Message):
                     
         ],
         [
-            InlineKeyboardButton("Join 3nd Channel", url = client.invitelink)
+            InlineKeyboardButton("Join 3nd Channel", url = client.invitelink),
+            InlineKeyboardButton("Join 4nd Channel", url = "https://t.me/Uchiha_Community")
         ]
     ]
     try:
