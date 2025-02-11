@@ -138,12 +138,12 @@ async def not_joined(client: Client, message: Message):
     buttons = [
         [
                     InlineKeyboardButton("Join Channel", url = "https://openinapp.link/fel7o"),
-                    InlineKeyboardButton("Join 2nd Channel", url = "https://t.me/+yKUrT97ZA9piZjQ1")
+                    InlineKeyboardButton("Join 2nd Channel", url = "https://t.me/+78eMfVRhnu9mZmNl")
                     
         ],
         [
             InlineKeyboardButton("Join 3nd Channel", url = client.invitelink),
-            InlineKeyboardButton("Join 4nd Channel", url = "https://t.me/+_T76jQqagadiYzNl")
+            InlineKeyboardButton("Join 4nd Channel", url = "https://t.me/+Ins50TpcTs8zYTZl")
         ]
     ]
     try:
