@@ -88,12 +88,11 @@ async def start_command(client: Client, message: Message):
                 [
                     InlineKeyboardButton("Join Community", url = "https://t.me/Uchiha_Community"),
                     InlineKeyboardButton("Join Backup", url = "https://t.me/ZolDox"),
-                    
+                    InlineKeyboardButton("Website", url = "https://hanime-yulv.onrender.com")  
                 ],
                 [
                     InlineKeyboardButton("Buy Premium", callback_data = "about"),
-                    InlineKeyboardButton("Developer", url = "https://t.me/Uchiha_Developer"),
-                    
+                    InlineKeyboardButton("Developer", url = "https://t.me/Uchiha_Developer")
                 ]
             ]
         )
@@ -137,13 +136,14 @@ REPLY_ERROR = """<code>Use this command as a replay to any telegram message with
 async def not_joined(client: Client, message: Message):
     buttons = [
         [
-                    InlineKeyboardButton("Join Channel", url = "https://t.me/+-9iVoOPHZZUxNDQ1"),
-                    InlineKeyboardButton("Join 2nd Channel", url = "https://t.me/+78eMfVRhnu9mZmNl")
+                    InlineKeyboardButton("Join Channel", url = "https://t.me/+UE1zchzoylg5M2Jl"),
+                    InlineKeyboardButton("Join 2nd Channel", url = "https://t.me/+Cv5_CBnJgjQ4ZDY1")
                     
         ],
         [
             InlineKeyboardButton("Join 3nd Channel", url = client.invitelink),
-            InlineKeyboardButton("Join 4nd Channel", url = "https://t.me/+sWFyXexj5oQ3MDI1")
+            InlineKeyboardButton("Join 4nd Channel", url = "https://t.me/+sWFyXexj5oQ3MDI1"),
+            InlineKeyboardButton("Click(Optional)", url = "https://hanime-yulv.onrender.com")
         ]
     ]
     try:
