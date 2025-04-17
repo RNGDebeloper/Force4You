@@ -87,8 +87,7 @@ async def start_command(client: Client, message: Message):
             [
                 [
                     InlineKeyboardButton("Join Community", url = "https://t.me/Uchiha_Community"),
-                    InlineKeyboardButton("Join Backup", url = "https://t.me/ZolDox"),
-                    InlineKeyboardButton("Website", url = "https://hanime-yulv.onrender.com")  
+                    InlineKeyboardButton("Join Backup", url = "https://t.me/ZolDox")  
                 ],
                 [
                     InlineKeyboardButton("Buy Premium", callback_data = "about"),
@@ -137,13 +136,12 @@ async def not_joined(client: Client, message: Message):
     buttons = [
         [
                     InlineKeyboardButton("Join Channel", url = "https://t.me/+UE1zchzoylg5M2Jl"),
-                    InlineKeyboardButton("Join 2nd Channel", url = "https://t.me/+Cv5_CBnJgjQ4ZDY1")
+                    InlineKeyboardButton("Join 2nd Channel", url = "https://t.me/+le0s_vv5tnFmZmZl")
                     
         ],
         [
             InlineKeyboardButton("Join 3nd Channel", url = client.invitelink),
-            InlineKeyboardButton("Join 4nd Channel", url = "https://t.me/+sWFyXexj5oQ3MDI1"),
-            InlineKeyboardButton("Website", url = "https://hanime-yulv.onrender.com")
+            InlineKeyboardButton("Join 4nd Channel", url = "https://t.me/+sWFyXexj5oQ3MDI1")
         ]
     ]
     try:
