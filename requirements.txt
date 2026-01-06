@@ -8,3 +8,11 @@ pymongo
 dnspython
 # --- For-Web-Response ------- #
 aiohttp
+
+pyrofork==2.3.50
+humanize
+psutil
+motor
+markdown
+asyncio
+requests
