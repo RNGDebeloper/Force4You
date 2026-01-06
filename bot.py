@@ -43,36 +43,18 @@ class Bot(Client):
                 self.LOGGER(__name__).warning(f"Please Double check the FORCE_SUB_CHANNEL value and Make sure Bot is Admin in channel with Invite Users via Link Permission, Current Force Sub Channel Value: {FORCE_SUB_CHANNEL}")
                 self.LOGGER(__name__).info("\nBot Stopped. Join https://t.me/Uchiha_Developer for support")
                 sys.exit()
-      #  try:
-       #     db_channel = await self.get_chat(CHANNEL_ID)
-       #     self.db_channel = db_channel
-      #      test = await self.send_message(chat_id = db_channel.id, text = "Test Message")
-      #      await test.delete()
-     #   except Exception as e:
-     #       self.LOGGER(__name__).warning(e)
-     #       self.LOGGER(__name__).warning(f"Make Sure bot is Admin in DB Channel, and Double check the CHANNEL_ID Value, Current Value {CHANNEL_ID}")
-    #        self.LOGGER(__name__).info("\nBot Stopped. Join https://t.me/Uchiha_Developer for support")
-    #        sys.exit()
-
-
-
         try:
-    # Ensure CHANNEL_ID is an integer
-            id_to_check = int(CHANNEL_ID) 
-            db_channel = await self.get_chat(id_to_check)
+            db_channel = await self.get_chat(CHANNEL_ID)
             self.db_channel = db_channel
-    # ... rest of your code
+            test = await self.send_message(chat_id = db_channel.id, text = "Test Message")
+            await test.delete()
         except Exception as e:
-    # Adding a check to see if we can find it in dialogs
-            self.LOGGER(__name__).info("Attempting to resolve Peer ID via dialogs...")
-            async for dialog in self.get_dialogs():
-                if dialog.chat.id == int(CHANNEL_ID):
-                    self.db_channel = dialog.chat
-                    break
-            else:
-        # If still not found, then throw the error
-                self.LOGGER(__name__).warning(f"Peer ID {CHANNEL_ID} still invalid.")
-                sys.exit()
+            self.LOGGER(__name__).warning(e)
+            self.LOGGER(__name__).warning(f"Make Sure bot is Admin in DB Channel, and Double check the CHANNEL_ID Value, Current Value {CHANNEL_ID}")
+            self.LOGGER(__name__).info("\nBot Stopped. Join https://t.me/Uchiha_Developer for support")
+            sys.exit()
+
+
 
         self.set_parse_mode(ParseMode.HTML)
         self.LOGGER(__name__).info(f"Bot Running..!\n\nCreated by \nhttps://t.me/Uchiha_Developer")
